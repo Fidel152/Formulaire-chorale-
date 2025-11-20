@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chœur de l'Espérance – Inscription</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <div class="header">
+      <img src="choeur.jpg" alt="Chœur de l'Espérance" />
+      <h1>Chœur de l'Espérance</h1>
+    </div>
+
+    <form id="choirForm" action="https://formspree.io/f/xxxxx" method="POST">
+      <label for="fullName">Nom complet *</label>
+      <input type="text" id="fullName" name="Nom complet" required />
+
+      <label for="address">Adresse actuelle *</label>
+      <input type="text" id="address" name="Adresse actuelle" required />
+
+      <label for="operator">Opérateur *</label>
+      <select id="operator" name="Opérateur" required>
+        <option value="" disabled selected>Choisir un opérateur</option>
+        <option value="YAS">YAS</option>
+        <option value="Airtel">Airtel</option>
+        <option value="Orange">Orange</option>
+      </select>
+
+      <label for="phone">Numéro de téléphone *</label>
+      <input type="tel" id="phone" name="Numéro de téléphone" required disabled placeholder="Choisissez d'abord un opérateur" />
+
+      <label for="voiceType">Type de voix *</label>
+      <select id="voiceType" name="Type de voix" required>
+        <option value="" disabled selected>Choisir une voix</option>
+        <option value="1ère voix">1ère voix</option>
+        <option value="2ème voix">2ème voix</option>
+        <option value="3ème voix">3ème voix</option>
+      </select>
+
+      <button type="submit">Soumettre</button>
+    </form>
+
+    <div id="successMessage" class="hidden">
+      Merci ! Votre inscription a bien été envoyée.
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
